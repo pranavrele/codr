@@ -401,6 +401,8 @@ grunt watch
 ```
 Once complete however simply run grunt one last time to ensure all went well. Please note that if using Grunt reference files and images within /dist directory for any section. If not using Grunt then reference /src. However it is strongly recommended that you use another optimization tool if not using Grunt in order to put less stress on the server.
 
+NOTE: Remove the Google Analytics script in the head of index.html and replace it with your own if you'd like. 
+
 ### 8. Credits
 
 #### Images
