@@ -1,6 +1,6 @@
 # Codr: Portfolio Theme
 
-Welcome to Codr: a minimalistic and versatile portfolio theme built using the Bootstrap framework
+Welcome to Codr, a minimalistic and versatile portfolio theme built using the Bootstrap framework
 
 ![Preview Image](http://pranavrele.github.io/codr/img/dist/codr_preview.png)
 
@@ -46,11 +46,11 @@ The optimizations done within Codr depend on Grunt. If you choose NOT to use Gru
 
 Once this is done rename the alt_index.html file to index.html.
 
-If you are not using Grunt it is strongly advised you use some other optimization tool to concatenate and minify for faster load times. If you choose this method you may need to alter the reference statements to the css and javascript files the newly renamed index.html accordingly. 
+If you are not using Grunt it is strongly advised you use some other optimization tool to concatenate and minify for faster load times. If you choose this method you may need to alter the reference statements to the css and javascript files in the newly renamed index.html accordingly. 
 
 ### 2. Get Started - with Grunt
 
-If using Grunt please familiarize yourself with the Gruntfile provided and its working. This file can largely be untouched unless you need to minify project images in which case reference 5.1 Work Carousel. Furthermore, you may delete the alt-index.html file if using Grunt.
+If using Grunt please familiarize yourself with the Gruntfile provided and its working. This file can be left largely untouched unless you need to minify project images in which case reference 5.1 Work Carousel. Furthermore, you may delete the alt-index.html file if using Grunt.
 
 #### 2.1 Grunt Setup
 
@@ -307,7 +307,7 @@ You may add as many projects to the carousel as you'd like.
 To add your contact details find the following within index.html:
 
 ```html
-<!-- START CONTACT -->
+	<!-- START CONTACT -->
 	<section id="contact" class="section">
 		<div class="container-fluid section-wrapper">
 			<div class="section-content">
@@ -327,7 +327,7 @@ To add your contact details find the following within index.html:
 		<div class="container section-wrapper">
 			<div class="section-content">
 				<div class="row text-center content-row">
-					<div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow fadeIn" data-wow-delay=".2s">
+					<div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow fadeIn" data-wow-delay=".1s">
 						<div class="about-content">
 							<a class="btn btn-round" href="mailto:pranavrele@gmail.com">
 								<i class="fa fa-envelope fa-2x fa-fw"></i>
@@ -335,7 +335,7 @@ To add your contact details find the following within index.html:
 							<h3 class="text-dark">Mail</h3>
 						</div>	
 					</div>
-					<div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow fadeIn" data-wow-delay=".4s">
+					<div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow fadeIn" data-wow-delay=".2s">
 						<div class="about-content">
 							<a class="btn btn-round" href="https://github.com/pranavrele">
 								<i class="fa fa-github fa-2x fa-fw"></i>
@@ -343,7 +343,7 @@ To add your contact details find the following within index.html:
 							<h3 class="text-dark">Github</h3>
 						</div>	
 					</div>
-					<div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow fadeIn" data-wow-delay=".6s">
+					<div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow fadeIn" data-wow-delay=".3s">
 						<div class="about-content">
 							<a class="btn btn-round" href="https://twitter.com/pranavrele">
 								<i class="fa fa-twitter fa-2x fa-fw"></i>
@@ -351,15 +351,15 @@ To add your contact details find the following within index.html:
 							<h3 class="text-dark">Twitter</h3>
 						</div>	
 					</div>
-					<div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow fadeIn" data-wow-delay=".8s">
+					<div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow fadeIn" data-wow-delay=".4s">
 						<div class="about-content">
-							<a class="btn btn-round" href="https://www.linkedin.com/pub/pranav-rele/ab/a93/aa0">
-								<i class="fa fa-linkedin fa-2x fa-fw"></i>
+							<a class="btn btn-round" href="https://instagram.com/pranavrele/">
+								<i class="fa fa-instagram fa-2x fa-fw"></i>
 							</a>
-							<h3 class="text-dark">LinkedIn</h3>
+							<h3 class="text-dark">Instagram</h3>
 						</div>	
 					</div>
-					<div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow fadeIn" data-wow-delay=".8s">
+					<div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow fadeIn" data-wow-delay=".5s">
 						<div class="about-content">
 							<a class="btn btn-round" href="https://dribbble.com/pranavrele">
 								<i class="fa fa-dribbble fa-2x fa-fw"></i>
@@ -367,7 +367,7 @@ To add your contact details find the following within index.html:
 							<h3 class="text-dark">Dribbble</h3>
 						</div>	
 					</div>
-					<div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow fadeIn" data-wow-delay=".8s">
+					<div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 wow fadeIn" data-wow-delay=".6s">
 						<div class="about-content">
 							<a class="btn btn-round" href="https://github.com/pranavrele/codr">
 								<i class="fa fa-download fa-2x fa-fw"></i>
@@ -379,7 +379,7 @@ To add your contact details find the following within index.html:
 			</div>
 		</div>
 	</section>
-<!-- END CONTACT -->
+	<!-- END CONTACT -->
 ```
 
 The icon pack used is [Font-Awesome](http://fortawesome.github.io/Font-Awesome/icons/). Consult the link provided to see what's available. 
@@ -401,7 +401,7 @@ grunt watch
 ```
 Once complete however simply run grunt one last time to ensure all went well. Please note that if using Grunt reference files and images within /dist directory for any section. If not using Grunt then reference /src. However it is strongly recommended that you use another optimization tool if not using Grunt in order to put less stress on the server.
 
-NOTE: Remove the Google Analytics script in the head of index.html and replace it with your own if you'd like. 
+NOTE: Remove the Google Analytics script in the head of index.html and replace it with your own if you'd like prior to deployment. 
 
 ### 8. Credits
 
