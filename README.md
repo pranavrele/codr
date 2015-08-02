@@ -1,4 +1,4 @@
-# Codr
+# Codr: Portfolio Theme
 
 Welcome to Codr: a minimalistic and versatile portfolio theme built using the Bootstrap framework
 
